@@ -1,17 +1,10 @@
 return {
-  {
-    "navarasu/onedark.nvim",
-    priority = 1000,
+    "tiagovla/tokyodark.nvim",
     opts = {
-      style = "deep", -- options: dark, darker, cool, deep, warm, warmer, light
-      transparent = true, -- makes the background transparent
+        -- custom options here
     },
-  },
-
-  {
-    "LazyVim/LazyVim",
-    opts = {
-      colorscheme = "onedark",
-    },
-  },
+    config = function(_, opts)
+        require("tokyodark").setup(opts) -- calling setup is optional
+        vim.cmd [[colorscheme tokyodark]]
+    end,
 }

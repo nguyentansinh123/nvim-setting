@@ -1,9 +1,1 @@
-return {
-  {
-    "numToStr/Comment.nvim",
-    event = "VeryLazy", -- loads after startup
-    config = function()
-      require("Comment").setup()
-    end,
-  },
-}
+return { "bluz71/vim-moonfly-colors", name = "moonfly", lazy = false, priority = 1000 }

@@ -4,7 +4,11 @@
 
 vim.cmd("let g:netrw_banner = 0")
 
+
+
 vim.g.root_spec = { "cwd" }
+
+vim.g.autoformat = false
 
 vim.opt.tabstop = 4
 vim.opt.softtabstop = 4
